@@ -1,0 +1,24 @@
+To get Hugo and run on Windows:
+1. Go to https://github.com/gohugoio/hugo/releases and look for the latest window .zip file
+2. This will download a .zip file with an .exe - this is the Hugo executable
+3. Unpack this executable in the desired directory (eg. /c/Hugo/bin) and now you can run Hugo
+4. Add Hugo to your path for convenience
+
+Cloning the site to a new pc:
+1. Go to the github repository https://github.com/tomisqi/site and copy the clone command
+2. Open a cmd line with git (e.g. gitbash), place yourself in the desired directory and paste the clone command
+
+To start Hugo server
+  1. Open cmd line
+  2. Go to /c/Hugo/site
+  3. >> hugo server
+  4. Site can now be accessed in http://localhost:1313
+
+Netlify
+  1. Login in https://www.netlify.com/ to see site status
+ 
+To add formulas in markdown
+1. Go to https://www.codecogs.com/latex/eqneditor.php
+2. Write your formula
+3. There should be a yellow box down in the site, select "URL" and copy the URL
+4. Add the equation to the .md file like this: ![eq] (https://latex.codecogs.com/gif.latex?a&space;=&space;b1)
