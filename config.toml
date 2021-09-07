@@ -1,4 +1,5 @@
 baseurl = "https://tomisqi.github.io/"
+canonifyURLs = true
 languageCode = "en-us"
 Title = ""
 theme = "potato-dark"
@@ -18,7 +19,7 @@ copyright = "&copy; Copyright notice"
 
 [[menu.main]]
     name = "Blog"
-    url = "/"
+    url = "/posts"
     weight = 1
 
 [[menu.main]]

@@ -55,13 +55,13 @@ This is similar to the size seen in this allocation type, so both allocation typ
 If there are nominal RBG sizes, it is safe to assume that there will also be "non-nominal" RBG sizes. It turns out that "non-nominal" RBGs are RBGs whose size are smaller than the nominal ones.<br>
 These RBGs are the first and last RBGs of the bandwidth part (BWP). Defined as follows in TS 38.214:
 
- - the size of the first RBG is ![eq] (https://latex.codecogs.com/gif.latex?RBG_0^{size}&space;=&space;P&space;-&space;(bwpStart)&space;mod&space;P)
+ - the size of the first RBG is ![eq](https://latex.codecogs.com/gif.latex?RBG_0^{size}&space;=&space;P&space;-&space;(bwpStart)&space;mod&space;P)
  - the size of the last RBG is ![eq](https://latex.codecogs.com/gif.latex?RBG_{last}^{size}&space;=&space;(bwpStart&space;&plus;&space;bwpSize)&space;mod&space;P)
 
 ##### Why these non-nominal RBG sizes?
 
 I found that this comes from the fact that RBG boundaries are kept aligned regardless of a shift in the start of the BWP (bwpStart). The RBGs are defined for a zero-shifted bwpStart, and any RBGs that belong to a non-zero shifted bwpStart are aligned to the zero-shifted bwpStart.<br>
-![image3] (/images/rbg.png)<br>
+![image3](/images/rbg.png)<br>
  <div style="text-align:center">(left) bwpStart=0 means RBGs are equal to the nominal RBG sizes, while (right) bwpStart=2 means RBGs at both ends are different </div>
 
 In the figure above, notice that for bwpStart=2, RBGs at both ends of the bandwidth part are smaller (shaded gray in the figure). These are two "non-nominal" RBG sizes. From the figure, it is clear that if alignment is to be kept, the RBGs at both ends of the BWP will have a different size - a non-nominal size - if the start of the BWP is shifted.
@@ -76,28 +76,28 @@ for RBGs. Instead, the precise starting resource block and the number of contigu
 
 To answer this question, I find it useful to think of a simple scenario. <br>
 Suppose our bandwidth was equal to 4. If our start resource block is ___S___, there are four such start resource blocks:<br>
-![image1] (/images/allocType1_startRBs.png)
+![image1](/images/allocType1_startRBs.png)
 For each of those start resource blocks ___S___, we have a different number of resource blocks to use. This number is limited by the number of resource blocks ahead of the start resource block.<br>
 If ___S___ = 0, there four different allocation sizes (shown leftmost in the image below). If ___S___ = 1, there are three different allocation sized and so on.
-![image2] (/images/allocType1.png)
+![image2](/images/allocType1.png)
 As can be seen in the image, in total we have 1 + 2 + 3 + 4 different possible configurations for our frequency allocation.<br>
 We can easily generalize this to say that given a bandwidth _B_ there will be 1 + 2 + 3 ... + (_B_ - 1) + _B_ possible different possible configurations.<br>
 Using the sum of natural numbers, this is equivalent to
 
-![eq1] (https://latex.codecogs.com/gif.latex?%5Cfrac%7BB*%28B&plus;1%29%7D%7B2%7D)
+![eq1](https://latex.codecogs.com/gif.latex?%5Cfrac%7BB*%28B&plus;1%29%7D%7B2%7D)
 
 The above tells us how many combinations would be possible, but how many bits will we need in the DCI? <br>
-We will need log2 number of bits (plus a ceil operator ![eq5] (https://latex.codecogs.com/gif.latex?%5Clceil%20.%20%5Crceil) to get the next integer)
+We will need log2 number of bits (plus a ceil operator ![eq5](https://latex.codecogs.com/gif.latex?%5Clceil%20.%20%5Crceil) to get the next integer)
 
-![eq2] (https://latex.codecogs.com/gif.latex?%5Clceil%20log_2%7B%28%5Cfrac%7BB*%28B&plus;1%29%7D%7B2%7D%29%7D%20%5Crceil)
+![eq2](https://latex.codecogs.com/gif.latex?%5Clceil%20log_2%7B%28%5Cfrac%7BB*%28B&plus;1%29%7D%7B2%7D%29%7D%20%5Crceil)
 
 This is analogous to the formula found in TS 38.212,
 
-![eq3] (https://latex.codecogs.com/gif.latex?%5Clceil%20log_2%20%7B%28%5Cfrac%7BN_%7BRB%7D%5E%7BDL%2CBWP%7D%20*%20%28N_%7BRB%7D%5E%7BDL%2CBWP%7D%20&plus;%201%29%7D%7B2%7D%29%7D%20%5Crceil)
+![eq3](https://latex.codecogs.com/gif.latex?%5Clceil%20log_2%20%7B%28%5Cfrac%7BN_%7BRB%7D%5E%7BDL%2CBWP%7D%20*%20%28N_%7BRB%7D%5E%7BDL%2CBWP%7D%20&plus;%201%29%7D%7B2%7D%29%7D%20%5Crceil)
 
 where,
 
-![eq4] (https://latex.codecogs.com/gif.latex?N_%7BRB%7D%5E%7BDL%2CBWP%7D)
+![eq4](https://latex.codecogs.com/gif.latex?N_%7BRB%7D%5E%7BDL%2CBWP%7D)
         = The number of resource blocks in the bandwidth part
 
 <br><br>

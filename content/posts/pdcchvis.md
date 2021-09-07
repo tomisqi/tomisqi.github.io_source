@@ -20,7 +20,7 @@ There is support to visualize multiple UEs.
 
 ## Windows
 Here's a screenshot of how the program looks when you open it up.
-![image1] (/images/pdcchvis1.png)<br>
+![image1](/images/pdcchvis1.png)<br>
 
 There are four "Windows":
 
@@ -36,11 +36,11 @@ The window to the leftmost can be used to change the PDCCH configuration.<br>
 The fields in this window closely resemble those in the PDCCH configuration that is received in RRC message. If you know about PDCCH in NR, most of the fields will look familiar. Notice that you can add additional coresets and search spaces by increasing the "No of" fields.<br>
 
 See for example how changing the duration of the Coreset causes the gray area to expand.
-![image2] (/images/pdcchvis2.gif)<br>
+![image2](/images/pdcchvis2.gif)<br>
 
 It is also possible to add more Search Spaces and Coresets.<br>
 In here, I add a new Search Space in the same Coreset (the new search space has different monitoring symbols).
-![image3] (/images/pdcchvis3.gif)<br>
+![image3](/images/pdcchvis3.gif)<br>
 
 ### PDCCH candidates
 PDCCH candidates can be viewed by selecting "Cand x" from the UE window to the right.<br>
@@ -48,35 +48,35 @@ PDCCH candidates can be viewed by selecting "Cand x" from the UE window to the r
 See below how selecting "Cand 0", shows where this PDCCH candidate is located in the time-frequency grid.<br>
 Notice that 6 REGs turn red. This represents one CCE, and the color red is the color of our UE in the UE window.
 The number inside the red REGs is the CCE index.
-![image4] (/images/pdcchvis4.gif)<br>
+![image4](/images/pdcchvis4.gif)<br>
 
 If you prefer another color, this is how you change it.
-![image7] (/images/pdcchvis7.gif)<br>
+![image7](/images/pdcchvis7.gif)<br>
 
 If you would like to see other aggregation levels, you can do this in the UE window.
-![image5] (/images/pdcchvis5.gif)<br>
+![image5](/images/pdcchvis5.gif)<br>
 
 To add UEs, increase "No of UEs" in the UE window.<br>
 Notice below that when expanding the UE1 tab, I select "Cand 0" for this new UE in order to see where it's located in the time-frequency grid.
-![image5] (/images/pdcchvis6.gif)<br>
+![image5](/images/pdcchvis6.gif)<br>
 
 By changing the slot, one can see how the location of the PDCCH candidates varies over time.
-![image8] (/images/pdcchvis8.gif)<br>
+![image8](/images/pdcchvis8.gif)<br>
 
 Eventually, when more than one UE is selected, the PDCCH candidates for each might overlap. When this happens, the color of the REG turns black.<br>
 The "Coreset" window in the bottom-left shows the UEs whose PDCCH candidate uses a specific CCE index. This can be useful to see how many UEs are using each CCE index. <br>
 Notice that in the time of overlap, for some CCE indexes the ueIdx = {0,1}. This means that the UEs with indexes 0 and 1 have PDCCH candidates on the same CCE.
-![image9] (/images/pdcchvis9.gif)<br>
+![image9](/images/pdcchvis9.gif)<br>
 
 ### PDCCH Interleaving
 CCE to REG interleaving can be visualized by enabling it the Coreset configuration ("Input" window). We can see how the different interleaving parameters change CCE positions in the time-frequency grid.
 
 Below you can see how interleaving is enabled.<br>
 Notice that a drop-down can be clicked to change interleaving parameters as desired (if the interleaving parameters results in an invalid configuration, an error message will be displayed and interleaving is not applied).
-![image10] (/images/pdcchvis10.gif)<br>
+![image10](/images/pdcchvis10.gif)<br>
 
 In here, it is easy to see what effect is produced when changing the shift index.
-![image11] (/images/pdcchvis11.gif)<br>
+![image11](/images/pdcchvis11.gif)<br>
 
 
 ### Future work

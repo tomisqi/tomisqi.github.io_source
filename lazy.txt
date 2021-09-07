@@ -21,4 +21,4 @@ To add formulas in markdown
 1. Go to https://www.codecogs.com/latex/eqneditor.php
 2. Write your formula
 3. There should be a yellow box down in the site, select "URL" and copy the URL
-4. Add the equation to the .md file like this: ![eq] (https://latex.codecogs.com/gif.latex?a&space;=&space;b1)
+4. Add the equation to the .md file like this: ![eq](https://latex.codecogs.com/gif.latex?a&space;=&space;b1)

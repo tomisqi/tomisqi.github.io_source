@@ -11,5 +11,6 @@ In this blog, I write about things I have learned that might be useful for other
 and other stuff I find interesting. I also talk about some of my spare time projects.
 
 You can contact me via the Twitter (link below).
+![/images/me](/images/me.png)
 
-<img src="/images/me.png" alt="me" width="200"/>
+<img src="images/me.png" alt="me" width="200"/>
