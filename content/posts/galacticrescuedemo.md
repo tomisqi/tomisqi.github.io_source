@@ -18,3 +18,6 @@ You can read more about the game on [itch.io](https://tmsigames.itch.io/galactic
 |<img src="/images/GRDemo1.jpg" alt="GRDemo1"/>	|<img src="/images/GRDemo2.jpg" alt="GRDemo2"/> |
 |:-:|:-:|
 |<img src="/images/GRDemo3.jpg" alt="GRDemo3"/>	|<img src="/images/GRDemo4.jpg" alt="GRDemo4"/> |
+
+Here's a gameplay sequence
+{{< youtube xUSqRtu5PGc >}}

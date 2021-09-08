@@ -1,16 +1,14 @@
 +++
-title = "About"
-date = "2018-11-01"
+date = "2021-09-01"
 +++
 
-My name's Antonio, and this is my personal blog.
 
-I'm a programmer.
+## Antonio Fiallos
+People also know as as Tony or Tomisqi. This is my home page.<br>
+I work as a programmer.
 
-In this blog, I write about things I have learned that might be useful for others,
-and other stuff I find interesting. I also talk about some of my spare time projects.
+In here, I write about stuff.
 
-You can contact me via the Twitter (link below).
-![/images/me](/images/me.png)
+You can contact me via the [Twitter](https://twitter.com/tomisqi).
 
-<img src="images/me.png" alt="me" width="200"/>
+<p style="text-align:center;"><img src="/images/me.png" alt="me" width="200"/></p>

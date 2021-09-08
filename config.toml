@@ -23,15 +23,13 @@ copyright = "&copy; Copyright notice"
     weight = 1
 
 [[menu.main]]
-    name = "Projects"
-    url = "/projects"
-    weight = 2
-
-[[menu.main]]
     name = "About"
     url = "/about"
-    weight = 3
+    weight = 2
 
+# This lets me put raw html in the md files.
+[markup.goldmark.renderer]
+unsafe= true
 
 [related]
   # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
